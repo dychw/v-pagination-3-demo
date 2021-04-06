@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import Pagination from 'v-pagination-3';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.component('pagination', Pagination);
+app.mount('#app');
